@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Weather App</h1>
+    <div id="weather-info">
+        <% if (weatherData) { %>
+            <h2>Weather in <%= weatherData.name %>, <%= weatherData.sys.country %></h2>
+            <p>Temperature: <%= weatherData.main.temp %>°C</p>
+            <p>Condition: <%= weatherData.weather[0].description %></p>
+        <% } else if (errorHtml) { %>
+            <%= errorHtml %>
+        <% } %>
+    </div>
+</body>
+</html>
