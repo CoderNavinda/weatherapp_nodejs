@@ -1,4 +1,4 @@
-# Node.js Weather App ☀️🌧️
+# Node.js Weather App 
 
 
 A Node.js-based weather app that provides real-time weather data for any location worldwide. Powered by Node.js and external weather APIs, it offers a straightforward and customizable weather forecast.
